@@ -48,11 +48,6 @@ jobs:
       - checkout
       - prepare_environment
       - run:
-          name: Create ID Set
-          when: always
-          command: |
-            python ./Tests/scripts/update_id_set.py -r
-      - run:
           name: Infrastucture testing
           when: always
           command: |

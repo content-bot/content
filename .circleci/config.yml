@@ -94,6 +94,7 @@ jobs:
   
   instance_testing:
     executor: my-executor
+    resource_class: medium+
     steps:
       - early_return_for_forked_pull_requests
       - checkout

@@ -438,6 +438,6 @@ script:
   isfetch: false
   runonce: false
   script: '-'
-  type: python
+  type: javascript
 tests:
 - ANYRUN-Test

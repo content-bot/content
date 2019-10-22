@@ -76,7 +76,7 @@ jobs:
       CONTENT_VERSION: "19.9.0"
       SERVER_VERSION: "5.0.0"
       GIT_SHA1: "bc047ac819b733774d73b8041a60d2a11981cdb0" # guardrails-disable-line disable-secrets-detection
-    resource_class: medium+
+#     resource_class: medium+
     steps:
       - checkout
       - setup_remote_docker

@@ -598,7 +598,7 @@ def create_test_file(is_nightly, skip_save=False):
 
         print("Getting changed files from the branch: {0}".format(branch_name))
         if branch_name != 'master':
-            files_string = run_command("git diff --name-status origin/master...{0}".format(branch_name))
+            files_string = run_command("git diff --name-status origin/master...refs/heads/{}".format(branch_name))
         else:
             commit_string = run_command("git log -n 2 --pretty='%H'")
             commit_string = commit_string.replace("'", "")
